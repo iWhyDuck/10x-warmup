@@ -1,0 +1,43 @@
+{
+  "permissions": {
+    "defaultMode": "acceptEdits",
+    "allow": [
+      "Edit(src/**)",
+      "Edit(tests/**)",
+      "Edit(*.py)",
+      "Write(src/**)",
+      "Write(tests/**)",
+      "Bash(pytest:*)",
+      "Bash(python -m pytest:*)",
+      "Bash(python -m unittest:*)",
+      "Bash(coverage run:*)",
+      "Bash(coverage report:*)",
+      "Bash(pylint:*)",
+      "Bash(flake8:*)",
+      "Bash(black:*)",
+      "Bash(mypy:*)",
+      "Bash(ruff:*)",
+      "Bash(pip install:*)",
+      "Bash(pip list)",
+      "Bash(python -m venv:*)",
+      "Bash(git commit:*)",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:pypi.org)"
+    ],
+    "ask": [
+      "Bash(git push:*)",
+      "Bash(pip uninstall:*)",
+      "Bash(rm -rf:*)"
+    ],
+    "deny": [
+      "Read(./.env)",
+      "Read(./.env.*)",
+      "Read(./secrets/**)",
+      "Read(./**/*secret*)",
+      "Read(./**/*password*)",
+      "Read(./**/*token*)",
+      "Read(./config/credentials*)"
+    ],
+    "additionalDirectories": ["../docs/"]
+  }
+}
